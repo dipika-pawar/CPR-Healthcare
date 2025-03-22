@@ -1,0 +1,120 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Membership Section */
+.membership-section {
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Container */
+.membership-container, .video-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+/* Text Styling */
+.membership-text, .video-text {
+  width: 50%;
+  padding: 20px;
+}
+
+.membership-text h1, .video-text h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.membership-text p, .video-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Image Box with Gradient Background */
+.image-box {
+  width: 35%;
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 20px rgba(255, 75, 43, 0.4);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-box:hover {
+  transform: scale(1.05);
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Video Box */
+.video-box {
+  width: 40%;
+}
+
+.video-box iframe {
+  width: 100%;
+  height: 320px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button */
+.btn-learn-more {
+  display: inline-block;
+  background: #ff4b2b;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-learn-more:hover {
+  background: #ff2a1a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .membership-container, .video-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px;
+  }
+
+  .membership-text, .image-box, .video-box, .video-text {
+      width: 100%;
+  }
+
+  .image-box {
+      padding: 15px;
+  }
+}

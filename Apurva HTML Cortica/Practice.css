@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+/* Header Navigation */
+.header {
+  background: white;
+  padding: 10px 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Banner Section */
+.banner {
+  background: linear-gradient(to right, #0295D3, #FDC830);
+  color: white;
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.banner h2 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.banner p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.banner-btn {
+  background-color: #034efc;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.banner-btn:hover {
+  background-color: #022a9f;
+}
+
+/* Main Content */
+.content {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  color: #034efc;
+  font-size: 24px;
+}
+
+/* Search Box */
+.search-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.search-box label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.search-box select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-btn {
+  background-color: #034efc;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.search-btn:hover {
+  background-color: #022a9f;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar ul li {
+      display: block;
+      margin: 10px 0;
+  }
+
+  .search-box {
+      width: 90%;
+      margin: auto;
+  }
+}
